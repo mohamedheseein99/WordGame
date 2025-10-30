@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #f44336;
+}
+
+body {
+    margin: 0;
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 15px;
+    margin: 0 0 10px;
+    background-color: white;
+}
+
+.alert {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    background: #009688;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 45px;
+    z-index: 2;
+    padding-top: 130px;
+}
+
+.alert span {
+    display: inline-block;
+    width: 100px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin: 10px;
+    color: white;
+    background-color: black;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.alert span:hover {
+    transform: scale(1.1);
+}
+
+.alert .ar {
+    background-color: green;
+}
+
+.game-cont {
+    text-align: center;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+
+    .game-arae {
+        .inputs {
+            div {
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                span {
+                    font-size: 23px;
+                    font-weight: bold;
+                    margin-right: 15px;
+                }
+
+            }
+
+            .hedin {
+                opacity: 0.3;
+                cursor: no-drop;
+                pointer-events: none;
+            }
+
+            .control {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10px auto;
+                gap: 0px 5px;
+
+                .check,
+                .hint {
+                    border: none;
+                    font-size: 25px;
+                    font-weight: bold;
+                    padding: 10px 15px;
+                    border-radius: 6px;
+                    background-color: var(--main-color);
+                    color: white;
+                    cursor: pointer;
+                    flex: 3;
+                }
+
+                .hint {
+                    flex: 1;
+                    padding: 10px 15px;
+                    background-color: green;
+                }
+
+                /* button:disabled {
+                    background-color: black;
+                    opacity: 0.4;
+                } */
+            }
+
+            input {
+                margin: 0 5px;
+                width: 55px;
+                height: 55px;
+                text-align: center;
+                font-size: 35px;
+                caret-color: blue;
+                background-color: white;
+                border: none;
+                border-bottom: 3px solid #333;
+                color: var(--main-color);
+
+                &:focus {
+                    border: none;
+                    outline-color: #ccc;
+                }
+
+                &.green {
+                    background-color: green;
+                    border: 2px solid green;
+                    color: white;
+                }
+
+                &.orange {
+                    background-color: orange;
+                    border: 2px solid orange;
+                    color: white;
+                }
+
+                &.red {
+                    background-color: red;
+                    border: 2px solid red;
+                    color: white;
+                }
+            }
+        }
+    }
+
+
+    .color-key {
+        h2 {
+            font-size: 40px;
+            margin: 20px 0;
+        }
+
+        .keyes {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: white;
+            margin-bottom: 20px;
+            border: 1px solid #666;
+
+            .key {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                margin-right: 20px;
+
+                &.green {
+                    background-color: green;
+                }
+
+                &.orange {
+                    background-color: orange;
+                }
+
+                &.red {
+                    background-color: red;
+                }
+            }
+
+            .text {
+                font-size: 25px;
+            }
+        }
+
+        .masege {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 25px;
+
+            span {
+                padding-top: 10px;
+                font-weight: bold;
+                display: block;
+                font-size: 40px;
+                color: var(--main-color);
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    background-color: #333;
+    font-size: 20px;
+}
