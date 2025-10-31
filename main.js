@@ -2,10 +2,12 @@ let alerte = document.querySelector("alert");
 let ar = document.querySelector(".ar");
 let en = document.querySelector(".en");
 let check = document.querySelector(".check");
+let check = document.querySelector(".tit");
 let numperOfHint = 2;
 document.querySelector(".hint span").innerHTML = numperOfHint;
 // AR Function
 ar.onclick = function () {
+  tit.innerHTML = "لعبة تخمين أسماء سورة القرآن الكريم ، بدون (ال) ";
   this.parentElement.style.display = "none";
   generat();
   check.addEventListener("click", handLess);
@@ -13,6 +15,7 @@ ar.onclick = function () {
 };
 // EN Function
 en.onclick = function () {
+  tit.innerHTML = "words Game Name ";
   // window.alert("الله يسامحك يا راجل , لا كدا طيب");
   this.parentElement.style.display = "none";
   // setTimeout(() => {
@@ -326,3 +329,4 @@ document.addEventListener("keydown", function (click) {
     }
   }
 });
+
