@@ -204,7 +204,7 @@ function handLess() {
   }
   // هنا هنحدد لو المستخدم فاز او خسر
   if (trueWord) {
-    masege.innerHTML = `ممتاز يا صاحبي الكلمة هي <span>ال${wordG}</span>`;
+    masege.innerHTML = `ممتاز يا صاحبي السورة هي <span>ال${wordG}</span>`;
     document.querySelector(".win").play();
     let all = document.querySelectorAll(".inputs > div");
     all.forEach((div) => div.classList.add("hedin"));
@@ -329,5 +329,6 @@ document.addEventListener("keydown", function (click) {
     }
   }
 });
+
 
 
