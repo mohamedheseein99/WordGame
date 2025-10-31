@@ -2,7 +2,7 @@ let alerte = document.querySelector("alert");
 let ar = document.querySelector(".ar");
 let en = document.querySelector(".en");
 let check = document.querySelector(".check");
-let check = document.querySelector(".tit");
+let tit = document.querySelector(".tit");
 let numperOfHint = 2;
 document.querySelector(".hint span").innerHTML = numperOfHint;
 // AR Function
@@ -329,4 +329,5 @@ document.addEventListener("keydown", function (click) {
     }
   }
 });
+
 
